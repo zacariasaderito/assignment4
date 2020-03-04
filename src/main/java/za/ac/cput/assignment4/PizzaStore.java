@@ -7,13 +7,14 @@ public class PizzaStore {
 
     public Pizza orderPizza(String type)
     {
+        if ((type != "veg") || (type != "meat") || (type != "cheese"))  {
+
+        }
         Pizza pizza = PizzaFactory.createPizza(type);
 
         pizza.prepare();
         pizza.bake();
         pizza.cut();
-
-
 
         return pizza;
     }

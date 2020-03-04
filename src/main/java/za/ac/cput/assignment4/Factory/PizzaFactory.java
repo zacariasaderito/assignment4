@@ -17,7 +17,11 @@ public class PizzaFactory {
         else if (type.equals("veg"))
         {
             pizza = new VegPizza();
+        }else
+        {
+            pizza = null;
         }
+
 
         return pizza;
     }
